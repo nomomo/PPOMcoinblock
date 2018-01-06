@@ -5,8 +5,8 @@
 * 버그 많음 버그리포트 바랍니다 (__) nomotg@gmail.com
 
 ## Install
-1. 브라우저 Userscript 확장 기능 설치
-  * Firefox 57.0(Quantum) ↑ - [Violentmonkey](https://addons.mozilla.org/ko/firefox/addon/violentmonkey/)
-  * Firefox 56.0 ↓ - [Greasemonkey](https://addons.mozilla.org/ko/firefox/addon/greasemonkey/)
-  * Chrome - [Tampermonkey](http://tampermonkey.net/)
-2. 다음의 링크로 접속하여 설치 버튼을 누름 [https://github.com/nomomo/PPOMcoinblock/raw/master/PPOMcoinblock.user.js](https://github.com/nomomo/PPOMcoinblock/raw/master/PPOMcoinblock.user.js)
+ 1. 브라우저 Userscript 확장 기능 설치
+    * Firefox 57.0(Quantum) ↑ - [Violentmonkey](https://addons.mozilla.org/ko/firefox/addon/violentmonkey/)
+    * Firefox 56.0 ↓ - [Greasemonkey](https://addons.mozilla.org/ko/firefox/addon/greasemonkey/)
+    * Chrome - [Tampermonkey](http://tampermonkey.net/)
+ 2. 다음의 링크로 접속하여 설치 버튼을 누름: [https://github.com/nomomo/PPOMcoinblock/raw/master/PPOMcoinblock.user.js](https://github.com/nomomo/PPOMcoinblock/raw/master/PPOMcoinblock.user.js)
