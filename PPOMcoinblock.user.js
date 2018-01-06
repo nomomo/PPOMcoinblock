@@ -77,12 +77,12 @@ window.addEventListener('DOMContentLoaded', function(){
       }
     }
   }
-  
+
   $("li.divider a").each(function() {
     if(check_null($(this)) && $(this).html() === "가상화폐"){
       this.closest("li").remove();
       return;
     }
-  })
-  
+  });
+
 });
