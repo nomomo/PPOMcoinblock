@@ -2,7 +2,7 @@
 // @name        PPOMcoinblock
 // @namespace   PPOMcoinblock
 // @description 뽐뿌에서 가상화폐 관련된 글을 목록에서 지운다.
-// @version  0.0.2
+// @version  0.0.3
 // @grant    none
 // @include  http://*.ppomppu.co.kr/*
 // @include  https://*.ppomppu.co.kr/*
@@ -33,15 +33,11 @@ function check_null(that) {
     return true;
   }
   else{
-  	return false; 
+  	return false;
   }
 }
 
 function block_element(target, parent){
-  if($(target).hasClass("board-contents")){
-      console.log(target);
-      return;
-  }
   $(target).each(function() {
     var that = $(this);
     if(check_null(that)){
@@ -49,13 +45,13 @@ function block_element(target, parent){
       for(var i in block_text){
         if(temp_text !== undefined && temp_text !== '' && temp_text.indexOf(block_text[i]) !== -1){
           if(show_log) console.log('BLOCKED_TEXT:', block_text[i], ' | ORIGINAL_TEXT: ', temp_text);
-          
+
           var temp_elem = that.closest(parent).prev("tr").find("td.line_separator");
           if( check_null(temp_elem) ){
-          	temp_elem.remove(); 
+          	temp_elem.remove();
           }
           that.closest(parent).remove();
-          return;
+          return true;
         }
       }
     }
@@ -65,7 +61,9 @@ function block_element(target, parent){
 window.addEventListener('DOMContentLoaded', function(){
   console.log('PPOM_COIN_BLOCK_RUNNING');
   block_element("li a","li");
-  block_element("tr td", "tr");
+  block_element("#mytx tr td", "tr");
+  block_element(".board_table tr td", "tr");
+  block_element("#revolution_main_table tr td", "tr");
   block_element("a span", "a");
 
   if( check_null( $('div.input-search input') ) ){
