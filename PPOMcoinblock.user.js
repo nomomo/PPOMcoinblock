@@ -2,7 +2,7 @@
 // @name        PPOMcoinblock
 // @namespace   PPOMcoinblock
 // @description 뽐뿌에서 가상화폐 관련된 글을 목록에서 지운다.
-// @version  0.0.1
+// @version  0.0.2
 // @grant    none
 // @include  http://*.ppomppu.co.kr/*
 // @include  https://*.ppomppu.co.kr/*
@@ -38,6 +38,10 @@ function check_null(that) {
 }
 
 function block_element(target, parent){
+  if($(target).hasClass("board-contents")){
+      console.log(target);
+      return;
+  }
   $(target).each(function() {
     var that = $(this);
     if(check_null(that)){
