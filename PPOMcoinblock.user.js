@@ -8,6 +8,8 @@
 // @include  https://*.ppomppu.co.kr/*
 // @require     http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js
 // @run-at      document-start
+// @updateURL   https://raw.githubusercontent.com/nomomo/PPOMcoinblock/master/PPOMcoinblock.user.js
+// @downloadURL https://raw.githubusercontent.com/nomomo/PPOMcoinblock/master/PPOMcoinblock.user.js
 // ==/UserScript==
 var block_level = 'strict'; // soft, hard, strict
 var show_log = false;
